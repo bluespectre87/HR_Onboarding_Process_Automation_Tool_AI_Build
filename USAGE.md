@@ -53,6 +53,7 @@ This file defines:
 - When onboarding defaults change
 
 **Example snippet**
+
 ![code example](/Images/Usage%20Guide%20-%20Step%202.png)
 
 
@@ -65,6 +66,7 @@ This file defines:
 This file defines role‑specific training tasks.
 
 Example:
+
 ![code example](/Images/Usage%20Guide%20-%20Step%203.png)
 
 ✏️ When you need to edit this file:
@@ -78,6 +80,7 @@ Example:
 📍 Location: sample_candidate.json
 
 **Example:**
+
 ![code example](/Images/Usage%20Guide%20-%20Step%204.png)
 
 ✏️ When you need to edit this file:
@@ -133,6 +136,7 @@ Templates use placeholders like:{{first_name}}, {{role_title}}, {{start_date}}
 {{manager_name}}. These are automatically replaced by the tool.
 
 🎨 Visual Summary
+
 ![code example](/Images/visual%20summary.png)
 
 
