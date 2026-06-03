@@ -1,6 +1,6 @@
 # HR Onboarding & Candidate Communication Automation Tool
 
-This project is a fully modular, CLI‑based automation tool designed to streamline HR processes including:
+This project is a fully modular, CLI‑based automation tool designed to streamline HR processes **generated entirely using microsoft Copilot (my first ever project of this type!)**. It includes:
 
 - Candidate communication (emails + call scripts)
 - Offer communication
@@ -65,39 +65,39 @@ All templates are fully editable and placeholder‑driven.
 
 ## 📂 Project Structure
 
-.
-├── src/
-│   ├── main.py
-│   ├── email_generator.py
-│   ├── call_script_generator.py
-│   ├── onboarding_plan_generator.py
-│   ├── training_plan_loader.py
-│   └── utils.py
-│
-├── templates/
-│   ├── emails/
-│   │   ├── rejection_not_shortlisted.md
-│   │   ├── rejection_after_screening.md
-│   │   ├── rejection_after_interview.md
-│   │   ├── offer_email.md
-│   │   ├── countdown_t_minus_14.md
-│   │   ├── countdown_t_minus_7.md
-│   │   └── countdown_t_minus_1.md
-│   │
-│   ├── call_scripts/
-│   │   ├── rejection_screening_call.md
-│   │   ├── rejection_interview_call.md
-│   │   └── offer_call_script.md
-│   │
-│   └── onboarding/
-│       └── core_onboarding.yaml
-│
-├── config/
-│   ├── company_config.yaml
-│   └── training_plan_example.csv
-│
-├── output/
-│   └── (auto‑generated files)
-│
-├── sample_candidate.json
-└── README.md
+HR-Automation-Tool/
+- sample_candidate.json
+- README.md
+
+src/
+- main.py
+- email_generator.py
+- call_script_generator.py
+- onboarding_plan_generator.py
+- training_plan_loader.py
+- utils.py
+
+templates/emails/
+- rejection_not_shortlisted.md
+- rejection_after_screening.md
+- rejection_after_interview.md
+- offer_email.md
+- countdown_t_minus_14.md
+- countdown_t_minus_7.md
+- countdown_t_minus_1.md
+
+templates/call_scripts/
+- rejection_screening_call.md
+-  rejection_interview_call.md
+- offer_call_script.md
+
+templates/onboarding/
+- core_onboarding.yaml
+
+config/
+-  company_config.yaml
+- training_plan_example.csv
+
+output/
+- auto-generated files
+

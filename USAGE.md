@@ -1,7 +1,9 @@
-📘 USAGE GUIDE — How to Use the HR Automation Tool
-A simple, visual, step‑by‑step guide with examples
+# USAGE GUIDE — How to Use the HR Automation Tool
+## A simple, visual, step‑by‑step guide with examples
 
 ⭐ 1. Overview — What this tool does
+
+
 This tool helps you automatically generate:
 
 - Candidate emails (rejection, offer, countdown)
@@ -17,15 +19,25 @@ You only need to provide:
 
 Everything else is automated.
 
-🧭 Step‑by‑Step Guide
+## Step‑by‑Step Guide
+
 🟦 STEP 1 — Clone or download the repository
+
+
 **If using Git:**
-git clone https://github.com/<your-org>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/bluespectre87/HR_Onboarding_Process_Automation_Tool_AI_Build.git
+
+Then navigate to this folder in your computer.
+
+
 **Or, you can download the ZIP and extract it**
 
 🟩 STEP 2 — Review & update company_config.yaml (one‑time setup)
+
+
 📍 Location: config/company_config.yaml
+
+
 This file defines:
 - Company name
 - Default working pattern
@@ -41,25 +53,19 @@ This file defines:
 - When onboarding defaults change
 
 **Example snippet**
-company:
-  name: "Example Organisation"
-  timezone: "Europe/London"
-defaults:
-  working_pattern: "Full-time"
-teams:
-  People & Culture:
-    manager_name: "Emily Carter"
+![code example](/Images/Usage%20Guide%20-%20Step%202.png)
+
 
 
 🟨 STEP 3 — Prepare a training plan CSV (per role)
+
 📍 Location: config/training_plan_example.csv
+
+
 This file defines role‑specific training tasks.
 
 Example:
-day_offset,time,title,owner
-1,15:00,Introduction to team tools,Manager
-2,09:00,Shadowing: core workflow,Manager
-3,10:00,Role-specific training module 1,Manager
+![code example](/Images/Usage%20Guide%20-%20Step%203.png)
 
 ✏️ When you need to edit this file:
 - When a new role is created
@@ -68,21 +74,20 @@ day_offset,time,title,owner
 - You can create as many CSVs as you want — one per role.
 
 🟧 STEP 4 — Create a candidate JSON file (per candidate)
+
 📍 Location: sample_candidate.json
+
 **Example:**
-{
-  "first_name": "Alex",
-  "role_title": "People Operations Specialist",
-  "team_name": "People & Culture",
-  "manager_name": "Emily Carter",
-  "start_date": "2026-07-01"
-}
+![code example](/Images/Usage%20Guide%20-%20Step%204.png)
+
 ✏️ When you need to edit this file:
 - For every new candidate
 - When details change (start date, manager, equipment, etc.)
 
 🟥 STEP 5 — Run the CLI to generate outputs
+
 From the project root:
+
 python src/main.py --candidate sample_candidate.json --training config/training_plan_example.csv
 
 The tool will:
@@ -92,7 +97,9 @@ The tool will:
 - Generate emails, call scripts, and onboarding plans
 
 🟪 STEP 6 — Find your generated files
+
 📍 Location:output/<candidate-name>/<timestamp>/
+
 Inside you’ll find:
 - onboarding_plan.md
 - All candidate emails (Markdown)
@@ -108,8 +115,9 @@ These are ready to copy into:
 - PDF export
 
 🟫 STEP 7 — Customise templates (optional)
-📍 Location:templates/
-templates/
+
+📍 Location:templates/templates/
+
 You can edit:
 - Email templates
 - Call scripts
@@ -121,49 +129,23 @@ You can edit:
 - New email variants
 - New onboarding tasks
 
-Templates use placeholders like:
-{{first_name}}
-{{role_title}}
-{{start_date}}
-{{manager_name}}
-These are automatically replaced by the tool.
+Templates use placeholders like:{{first_name}}, {{role_title}}, {{start_date}}
+{{manager_name}}. These are automatically replaced by the tool.
 
 🎨 Visual Summary
-          ┌──────────────────────────────┐
-          │   1. Clone the repository    │
-          └───────────────┬──────────────┘
-                          ▼
-          ┌──────────────────────────────┐
-          │ 2. Update company_config.yaml│
-          └───────────────┬──────────────┘
-                          ▼
-          ┌──────────────────────────────┐
-          │ 3. Create training CSV       │
-          └───────────────┬──────────────┘
-                          ▼
-          ┌──────────────────────────────┐
-          │ 4. Create candidate JSON     │
-          └───────────────┬──────────────┘
-                          ▼
-          ┌──────────────────────────────┐
-          │ 5. Run CLI command           │
-          └───────────────┬──────────────┘
-                          ▼
-          ┌──────────────────────────────┐
-          │ 6. Review output/ folder     │
-          └───────────────┬──────────────┘
-                          ▼
-          ┌──────────────────────────────┐
-          │ 7. Edit templates if needed  │
-          └──────────────────────────────┘
+![code example](/Images/visual%20summary.png)
 
 
 🧩 Key CLI Commands (Quick Reference)
-Generate onboarding + emails + scripts:
+
+**Generate onboarding + emails + scripts:**
+
 python src/main.py --candidate sample_candidate.json --training config/training_plan_example.csv
 
-Use a different training plan:
+**Use a different training plan:**
+
 python src/main.py --candidate candidate.json --training config/tech_training.csv
 
-Use a different candidate file:
+**Use a different candidate file:**
+
 python src/main.py --candidate candidates/jordan.json --training config/training_plan_example.csv
