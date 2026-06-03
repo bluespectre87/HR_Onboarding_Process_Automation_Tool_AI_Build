@@ -1,0 +1,10 @@
+```csv
+day_offset,time,title,owner
+1,15:00,Introduction to team tools,Manager
+2,09:00,Shadowing: core workflow,Manager
+2,13:00,Systems training: platform overview,IT
+3,10:00,Role-specific training module 1,Manager
+4,11:00,Shadowing: advanced tasks,Manager
+5,14:00,End-of-week review and Q&A,Manager
+7,10:00,Week 2 development session,Manager
+10,09:30,Progress review and early goals,Manager

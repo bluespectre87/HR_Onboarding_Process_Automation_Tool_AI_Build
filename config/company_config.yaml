@@ -1,0 +1,59 @@
+# Company Configuration File
+# This file defines organisation-wide defaults used across the automation tool.
+# All values can be overridden by candidate-specific data.
+
+company:
+  name: "Example Organisation"
+  domain: "example.org"
+  timezone: "Europe/London"
+  working_hours:
+    start: "09:00"
+    end: "17:30"
+  dress_code: "Smart casual"
+
+defaults:
+  working_pattern: "Full-time"
+  contract_type: "Permanent"
+  probation_length: "6 months"
+  remote_access_required: "Yes"
+  equipment:
+    - "Laptop"
+    - "Monitor"
+    - "Headset"
+
+teams:
+  People & Culture:
+    manager_name: "Emily Carter"
+    email: "emily.carter@example.org"
+    location: "Grantham Office"
+    onboarding_contact: "people-team@example.org"
+
+  Technology:
+    manager_name: "Jordan Smith"
+    email: "jordan.smith@example.org"
+    location: "London Office"
+    onboarding_contact: "tech-onboarding@example.org"
+
+  Operations:
+    manager_name: "Priya Patel"
+    email: "priya.patel@example.org"
+    location: "Manchester Hub"
+    onboarding_contact: "ops-support@example.org"
+
+onboarding:
+  arrival_instructions:
+    office: "Report to reception and ask for your manager"
+    remote: "Join via the Teams link sent in your welcome email"
+  first_day_focus:
+    - "Meet the team"
+    - "Get set up with systems"
+    - "Walk through the onboarding plan"
+    - "Light introductory tasks only"
+
+email_settings:
+  sender_name: "People & Culture Team"
+  sender_email: "no-reply@example.org"
+  signature_block: |
+    Kind regards,
+    People & Culture Team
+    Example Organisation

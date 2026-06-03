@@ -1,0 +1,31 @@
+# Core Onboarding Tasks
+# These tasks apply to every new starter and are merged with the role-specific training plan.
+
+- day_offset: 0
+  time: "09:00"
+  title: "Welcome email sent with first-day details"
+  owner: "HR"
+
+- day_offset: 0
+  time: "10:00"
+  title: "IT account creation and system access setup"
+  owner: "IT"
+
+- day_offset: 0
+  time: "14:00"
+  title: "Equipment prepared and logged for delivery/collection"
+  owner: "IT"
+
+- day_offset: 1
+  time: "09:00"
+  title: "Welcome meeting with manager"
+  owner: "Manager"
+
+- day_offset: 1
+  time: "10:00"
+  title: "HR onboarding session (policies, payroll, benefits)"
+  owner: "HR"
+
+- day_offset: 1
+  time: "11:30"
+  title: "IT induction and system walkthrough
